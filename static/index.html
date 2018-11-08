@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> 酷狗音乐 - 就是歌多 </title>
+	<meta name="description" content="酷狗音乐旗下最新最全的在线正版音乐网站，本站为您免费提供最全的在线音乐试听下载，以及全球海量电台和MV播放服务、最新音乐播放器下载。酷狗音乐 和音乐在一起。">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/base.css"/>
+	<link href="img/icons/favicon.ico" rel="shortcut icon">
+	<script src="js/banner.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/axios.min.js"></script>
+	<script src="js/qs.min.js"></script>
+</head>
+<body>
+<header id="header" >
+</header> 
+<div class="mainPage"  id="app">
+	<!-- 轮播图 -->
+	<div class="sliderWrap" style="z-index: -10">
+		<div class="banner">
+			<div class="wrap">
+				<div class="ban">
+					<img src="img/index/2018082301.png">
+					<img src="img/index/2018082303.png">
+					<img src="img/index/2018082302.png">
+					<img src="img/index/2018082310.png">
+					<img src="img/index/2018082305.png">
+					<img src="img/index/2018082308.png">
+					<img src="img/index/2018082309.png">
+					<img src="img/index/2018082307.png">
+			</div>
+				<ul class="dots">
+				</ul>
+			</div>
+			<!--<div class="shadow">-->
+				<!--<img src="img/icons/shadow_min.png" />-->
+			<!--</div>-->
+			<div class="btn">
+				<button type="button" class="prev"></button>
+				<button class="next"></button>
+			</div>
+		</div>
+	</div>
+	<!-- 下载 -->
+	<div class="download">
+		<div class="down">
+			<ul>
+				<li><a href="#">下载PC版</a>
+					<span class="line"></span>
+				</li>
+				<li><a href="#">下载iPhone版</a>
+					<span class="line"></span>
+				</li>
+				<li><a href="#">下载Android版</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="content">
+		<div class="selectsonglist">
+			<div class="itemTitle">
+				<h3><b>精选</b>歌单</h3>
+				<a href="#">更多</a>
+			</div>
+			<div class="itemContent">
+				<ul id="itemContent">
+					<!-- <li>
+						<div class="play_btn"></div>
+						<a href="#">
+						<img src="img/index/300.jpg"/>
+						<p>愿无岁月可回头</p>
+						<p>22.2万</p></a>
+					</li>
+					<li>
+						<div class="play_btn"></div>
+						<a href="#">
+						<img src="img/index/301.jpg"/>
+						<p>喜欢你这件事</p>
+					<p>22.2万</p></a>
+					</li>
+					<li >
+						<div class="play_btn"></div>
+						<a href="#">
+						<img src="img/index/303.jpg"/>
+						<p>"长大"这两个字，孤独的连偏旁都没有</p>
+						<p>22.2万</p></a>
+					</li>
+					<li>
+						<div class="play_btn"></div>
+						<a href="#">
+						<img src="img/index/304.jpg"/>
+						<p>安静新民谣:上班族的减压良药</p>
+					<p>22.2万</p></a>
+					</li>
+					<li>
+						<div class="play_btn"></div>
+						<a href="#">
+						<img src="img/index/305.jpg"/>
+						<p>睡前造梦 · 欧美致幻男嗓</p>
+					<p>22.2万</p></a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		<div class="new_and_mv">
+			<div class="newsonglist">
+				<div class="itemTitle">
+					<h3><b>新歌</b>首发</h3>
+					<ul class="newlist">
+						<li><a href="#Chain" class="active"  data-toggle=item data-target="#Chain">华语</a></li>
+						<li><a href="#English" data-toggle=item data-target="#English">欧美</a></li>
+						<li><a href="#Korea" data-toggle=item data-target="#Korea">韩国</a></li>
+						<li><a href="#Japan" data-toggle=item data-target="#Japan">日本</a></li>
+					</ul>
+					<a href="#">更多</a>
+					<button class="allplay">
+						<span></span>
+						<span>全部播放</span>
+					</button>
+				</div>
+				<div class="itemContent">
+					<ul id="Chain" class="box active">
+					<!-- <li><a href="#">
+						<span class="songName">{{item.s_singer}} - {{item.lname}}</span>
+						<span class="songTips"></span>
+						<span class="songTime">{{ltime}}</span>
+						<span class="icon-download"></span>
+						<span class="icon-play"></span>
+					</a></li> -->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">张艺兴、Alan Walker - Sheep (Alan Walker Relift)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:51</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">张杰 - 不想想你【爱在星光里陈少琪原创音乐剧主题曲】</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:21</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">ONER - 过敏(ALLERGY)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">04:20</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span>-->
+					<!--</a></li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">薛之谦 - 违背的青春【酷狗音乐致不易青年主题曲】</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">04:43</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">吴亦凡、那吾克热·玉素甫江、Blow Fever - 家人 (Live)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">02:53</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">何炅、李维嘉、杨洋、魏大勋 - 江湖叹 (Live)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:25</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">胡彦斌 - 我不确定</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">02:38</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">庞龙 - 给孩子的话</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">04:43</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">王鹤棣、官鸿、梁靖康、吴希泽 - 开学第一课</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:36</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span>-->
+					<!--</a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">周汤豪 - I Am The Man</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:16</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">宿涵、张神儿 - 千年之恋+黄金甲+将军 (Live)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">04:15</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">田燚 - 性别 (Live)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:06</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">金志文 - 我很丑可是我很温柔 (Live)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:57</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">A-Lin - 无人知晓的我 (Live)</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">03:26</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					<!--<li><a href="#">-->
+						<!--<span class="songName">陈势安 - 你不是我的</span>-->
+						<!--<span class="songTips"></span>-->
+						<!--<span class="songTime">04:36</span>-->
+						<!--<span class="icon-download"></span>-->
+						<!--<span class="icon-play"></span></a>-->
+					<!--</li>-->
+					</ul>
+					<ul id="English" class="box">
+						<li><a href="#">
+							<span class="songName">王鹤棣、官鸿、梁靖康、吴希泽 - 开学第一课</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a>
+						</li>
+						<li><a href="#">
+							<span class="songName">周汤豪 - I Am The Man</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:16</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">宿涵、张神儿 - 千年之恋+黄金甲+将军 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:15</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">田燚 - 性别 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:06</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">金志文 - 我很丑可是我很温柔 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:57</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">A-Lin - 无人知晓的我 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:26</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">陈势安 - 你不是我的</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">薛之谦 - 违背的青春【酷狗音乐致不易青年主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">05:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a></li>
+						<li><a href="#">
+							<span class="songName">张艺兴、Alan Walker - Sheep (Alan Walker Relift)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:51</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">张杰 - 不想想你【爱在星光里陈少琪原创音乐剧主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:21</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">ONER - 过敏(ALLERGY)</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:20</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a></li>
+						<li><a href="#">
+							<span class="songName">薛之谦 - 违背的青春【酷狗音乐致不易青年主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:43</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">吴亦凡、那吾克热·玉素甫江、Blow Fever - 家人 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">02:53</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">何炅、李维嘉、杨洋、魏大勋 - 江湖叹 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:25</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">胡彦斌 - 我不确定</span>
+							<span class="songTips"></span>
+							<span class="songTime">02:38</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">庞龙 - 给孩子的话</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:43</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+					</ul>
+					<ul id="Korea" class="box">
+						<li><a href="#">
+							<span class="songName">薛之谦 - 违背的青春【酷狗音乐致不易青年主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">05:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+
+						</a></li>
+						<li><a href="#">
+							<span class="songName">张艺兴、Alan Walker - Sheep (Alan Walker Relift)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:51</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">张杰 - 不想想你【爱在星光里陈少琪原创音乐剧主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:21</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">ONER - 过敏(ALLERGY)</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:20</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a></li>
+						<li><a href="#">
+							<span class="songName">薛之谦 - 违背的青春【酷狗音乐致不易青年主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:43</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">吴亦凡、那吾克热·玉素甫江、Blow Fever - 家人 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">02:53</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">何炅、李维嘉、杨洋、魏大勋 - 江湖叹 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:25</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">胡彦斌 - 我不确定</span>
+							<span class="songTips"></span>
+							<span class="songTime">02:38</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">庞龙 - 给孩子的话</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:43</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">王鹤棣、官鸿、梁靖康、吴希泽 - 开学第一课</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a>
+						</li>
+						<li><a href="#">
+							<span class="songName">周汤豪 - I Am The Man</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:16</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">宿涵、张神儿 - 千年之恋+黄金甲+将军 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:15</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">田燚 - 性别 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:06</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">金志文 - 我很丑可是我很温柔 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:57</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">A-Lin - 无人知晓的我 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:26</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">陈势安 - 你不是我的</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+					</ul>
+					<ul id="Japan" class="box">
+						<li><a href="#">
+							<span class="songName">庞龙 - 给孩子的话</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:43</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">王鹤棣、官鸿、梁靖康、吴希泽 - 开学第一课</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a>
+						</li>
+						<li><a href="#">
+							<span class="songName">周汤豪 - I Am The Man</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:16</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">宿涵、张神儿 - 千年之恋+黄金甲+将军 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:15</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">田燚 - 性别 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:06</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">金志文 - 我很丑可是我很温柔 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:57</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">A-Lin - 无人知晓的我 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:26</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">陈势安 - 你不是我的</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">薛之谦 - 违背的青春【酷狗音乐致不易青年主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">05:36</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a></li>
+						<li><a href="#">
+							<span class="songName">张艺兴、Alan Walker - Sheep (Alan Walker Relift)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:51</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">张杰 - 不想想你【爱在星光里陈少琪原创音乐剧主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:21</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">ONER - 过敏(ALLERGY)</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:20</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span>
+						</a></li>
+						<li><a href="#">
+							<span class="songName">薛之谦 - 违背的青春【酷狗音乐致不易青年主题曲】</span>
+							<span class="songTips"></span>
+							<span class="songTime">04:43</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">吴亦凡、那吾克热·玉素甫江、Blow Fever - 家人 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">02:53</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">何炅、李维嘉、杨洋、魏大勋 - 江湖叹 (Live)</span>
+							<span class="songTips"></span>
+							<span class="songTime">03:25</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+						<li><a href="#">
+							<span class="songName">胡彦斌 - 我不确定</span>
+							<span class="songTips"></span>
+							<span class="songTime">02:38</span>
+							<span class="icon-download"></span>
+							<span class="icon-play"></span></a>
+						</li>
+				</ul>
+				</div>
+				<div class="pages">
+					<!-- <a class="prev"></a>
+					<div class="page">
+						<span class="currentPage">1</span>/<span class="allPage">3</span>
+					</div>
+					<a class="next"></a> -->
+				</div>
+			</div>
+			<div class="mvlist">
+				<div class="itemTitle">
+					<h3><b>推荐</b>MV</h3>
+					<a href="#">更多</a>
+				</div>
+				<div class="itemContent">
+					<div class="cptBigl">
+						<a href="#" target="_blank">
+							<img src="img/index/20180831093344468334.jpg"/>
+
+						<div class="cover">
+							<div class="playBtn"></div>
+						</div>
+						<div class="cptB">
+							<p class="songlistName">LAY-Sheep</p>
+							<p class="songlistSinger">张艺兴、Alan Walker</p>
+						</div></a>
+					</div>
+					<div class="cptMidl">
+						<a href="#">
+							<img src="img/index/20180904092333296902.jpg"/>
+							<div class="cover">
+								<div class="playBtn"></div>
+							</div>
+							<div class="cptB">
+								<p class="songlistName">金不奂</p>
+								<p class="songlistSinger">金志文、陈奂仁</p>
+							</div></a>
+
+					</div>
+					<div class="cptMidt">
+						<a href="#">
+							<img src="img/index/20180901133610618986.jpg"/><div class="cover">
+							<div class="playBtn"></div>
+						</div>
+							<div class="cptB">
+								<p class="songlistName">不羡</p>
+								<p class="songlistSinger">SING女团</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="toplist">
+			<div class="itemTitle">
+				<h3><b>热门</b>榜单</h3>
+				<a href="#">更多</a>
+			</div>
+			<div class="itemContent">
+				<ul class="lists">
+					<li class="itemtop">
+						<div class="ban">
+							<div class="itemleft">
+								<p class="liststitle">酷狗飙升榜</p>
+								<ul class="songlist">
+									<li>
+										<div class="s_num">1</div>
+										<div class="s_name">愿意为你去冒险</div>
+										<div class="s_singer">摩登兄弟刘宇宁</div>
+									</li>
+									<li>
+										<div class="s_num">2</div>
+										<div class="s_name">偷不走的现在</div>
+										<div class="s_singer">于文文</div>
+									</li>
+									<li>
+										<div class="s_num">3</div>
+										<div class="s_name">午夜的列车</div>
+										<div class="s_singer">南征北战NZBZ</div>
+									</li>
+									<li>
+										<div class="s_num">4</div>
+										<div class="s_name">每分每秒</div>
+										<div class="s_singer">曲肖冰、陈程</div>
+									</li>
+									<li>
+										<div class="s_num">5</div>
+										<div class="s_name">如果不爱我</div>
+										<div class="s_singer">马旭东</div>
+									</li>
+									<li>
+										<div class="s_num">6</div>
+										<div class="s_name">小生不才</div>
+										<div class="s_singer">李袁杰、李俊佑</div>
+									</li>
+								</ul>
+							</div>
+							<div class="itemright">
+									<p class="liststitle">酷狗飙升榜</p>
+									<ul class="songlist">
+										<li>
+											<a href="#"><div class="s_num">1</div>
+											<div class="s_name">愿意为你去冒险</div>
+											<div class="s_singer">摩登兄弟刘宇宁</div></a>
+										</li>
+										<li>
+											<a href="#"><div class="s_num">2</div>
+											<div class="s_name">偷不走的现在</div>
+											<div class="s_singer">于文文</div></a>
+										</li>
+										<li>
+											<a href="#"><div class="s_num">3</div>
+											<div class="s_name">午夜的列车</div>
+											<div class="s_singer">南征北战NZBZ</div></a>
+										</li>
+										<li>
+											<a href="#"><div class="s_num">4</div>
+											<div class="s_name">每分每秒</div>
+											<div class="s_singer">曲肖冰、陈程</div></a>
+										</li>
+										<li>
+											<a href="#"><div class="s_num">5</div>
+											<div class="s_name">如果不爱我</div>
+											<div class="s_singer">马旭东</div></a>
+										</li>
+										<li>
+											<a href="#"><div class="s_num">6</div>
+											<div class="s_name">小生不才</div>
+											<div class="s_singer">李袁杰、李俊佑</div></a>
+										</li>
+									</ul>
+								</div>
+						</div>
+					</li>
+					<li class="itemtop">
+						<div class="ban">
+							<div class="itemleft">
+								<p class="liststitle">酷狗TOP500</p>
+								<ul class="songlist">
+									<li>
+										<div class="s_num">1</div>
+										<div class="s_name">一百万个可能</div>
+										<div class="s_singer">Christine Welch</div>
+									</li>
+									<li>
+										<div class="s_num">2</div>
+										<div class="s_name">我已经爱上你</div>
+										<div class="s_singer">蒙面哥、彭清</div>
+									</li>
+									<li>
+										<div class="s_num">3</div>
+										<div class="s_name">卡路里</div>
+										<div class="s_singer">火箭少女101</div>
+									</li>
+									<li>
+										<div class="s_num">4</div>
+										<div class="s_name">再见只是陌生人</div>
+										<div class="s_singer">庄心妍</div>
+									</li>
+									<li>
+										<div class="s_num">5</div>
+										<div class="s_name">体面</div>
+										<div class="s_singer">于文文</div>
+									</li>
+									<li>
+										<div class="s_num">6</div>
+										<div class="s_name">嘴巴嘟嘟</div>
+										<div class="s_singer">刘子璇</div>
+									</li>
+								</ul>
+							</div>
+							<div class="itemright">
+								<p class="liststitle">酷狗TOP500</p>
+								<ul class="songlist">
+									<li>
+										<a href="#"><div class="s_num">1</div>
+										<div class="s_name">一百万个可能</div>
+										<div class="s_singer">Christine Welch</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">2</div>
+										<div class="s_name">我已经爱上你</div>
+										<div class="s_singer">蒙面哥、彭清</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">3</div>
+										<div class="s_name">卡路里</div>
+										<div class="s_singer">火箭少女101</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">4</div>
+										<div class="s_name">再见只是陌生人</div>
+										<div class="s_singer">庄心妍</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">5</div>
+										<div class="s_name">体面</div>
+										<div class="s_singer">于文文</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">6</div>
+										<div class="s_name">嘴巴嘟嘟</div>
+										<div class="s_singer">刘子璇</div></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="itemtop">
+						<div class="ban">
+							<div class="itemleft">
+								<p class="liststitle">网络红歌榜</p>
+								<ul class="songlist">
+									<li>
+										<div class="s_num">1</div>
+										<div class="s_name">我眼里的一粒沙</div>
+										<div class="s_singer">冷漠</div>
+									</li>
+									<li>
+										<div class="s_num">2</div>
+										<div class="s_name">98k</div>
+										<div class="s_singer">洛天依、跟风社</div>
+									</li>
+									<li>
+										<div class="s_num">3</div>
+										<div class="s_name">英雄出征</div>
+										<div class="s_singer">洛天依</div>
+									</li>
+									<li>
+										<div class="s_num">4</div>
+										<div class="s_name">零默契拍档</div>
+										<div class="s_singer">宋梦君、夏婉安</div>
+									</li>
+									<li>
+										<div class="s_num">5</div>
+										<div class="s_name">靠自己</div>
+										<div class="s_singer">金久哲</div>
+									</li>
+									<li>
+										<div class="s_num">6</div>
+										<div class="s_name">会不会</div>
+										<div class="s_singer">白小白</div>
+									</li>
+								</ul>
+							</div>
+							<div class="itemright">
+								<p class="liststitle">网络红歌榜</p>
+								<ul class="songlist">
+									<li>
+										<a href="#"><div class="s_num">1</div>
+										<div class="s_name">我眼里的一粒沙</div>
+										<div class="s_singer">冷漠</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">2</div>
+										<div class="s_name">98k</div>
+										<div class="s_singer">洛天依、跟风社</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">3</div>
+										<div class="s_name">英雄出征</div>
+										<div class="s_singer">洛天依</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">4</div>
+										<div class="s_name">零默契拍档</div>
+										<div class="s_singer">宋梦君、夏婉安</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">5</div>
+										<div class="s_name">靠自己</div>
+										<div class="s_singer">金久哲</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">6</div>
+										<div class="s_name">会不会</div>
+										<div class="s_singer">白小白</div></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="itemtop">
+						<div class="ban">
+							<div class="itemleft">
+								<p class="liststitle">华语新歌榜</p>
+								<ul class="songlist">
+									<li>
+										<div class="s_num">1</div>
+										<div class="s_name">38度6</div>
+										<div class="s_singer">黑龙</div>
+									</li>
+									<li>
+										<div class="s_num">2</div>
+										<div class="s_name">违背的青春</div>
+										<div class="s_singer">薛之谦</div>
+									</li>
+									<li>
+										<div class="s_num">3</div>
+										<div class="s_name">光年之外(Live)</div>
+										<div class="s_singer">摩登兄弟</div>
+									</li>
+									<li>
+										<div class="s_num">4</div>
+										<div class="s_name">卡布奇诺</div>
+										<div class="s_singer">曲肖冰</div>
+									</li>
+									<li>
+										<div class="s_num">5</div>
+										<div class="s_name">盗将行</div>
+										<div class="s_singer">莫籽、Neko(4)</div>
+									</li>
+									<li>
+										<div class="s_num">6</div>
+										<div class="s_name">只是听说</div>
+										<div class="s_singer">高安</div>
+									</li>
+								</ul>
+							</div>
+							<div class="itemright">
+								<p class="liststitle">华语新歌榜</p>
+								<ul class="songlist">
+									<li>
+										<a href="#"><div class="s_num">1</div>
+										<div class="s_name">38度6</div>
+										<div class="s_singer">黑龙</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">2</div>
+										<div class="s_name">违背的青春</div>
+										<div class="s_singer">薛之谦</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">3</div>
+										<div class="s_name">光年之外(Live)</div>
+										<div class="s_singer">摩登兄弟</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">4</div>
+										<div class="s_name">卡布奇诺</div>
+										<div class="s_singer">曲肖冰</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">5</div>
+										<div class="s_name">盗将行</div>
+										<div class="s_singer">莫籽、Neko(4)</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">6</div>
+										<div class="s_name">只是听说</div>
+										<div class="s_singer">高安</div></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="itemtop">
+						<div class="ban">
+							<div class="itemleft">
+								<p class="liststitle">古风金曲榜</p>
+								<ul class="songlist">
+									<li>
+										<div class="s_num">1</div>
+										<div class="s_name">风筝误</div>
+										<div class="s_singer">刘珂矣</div>
+									</li>
+									<li>
+										<div class="s_num">2</div>
+										<div class="s_name">红昭愿</div>
+										<div class="s_singer">音阙诗听</div>
+									</li>
+									<li>
+										<div class="s_num">3</div>
+										<div class="s_name">不见有情</div>
+										<div class="s_singer">河图</div>
+									</li>
+									<li>
+										<div class="s_num">4</div>
+										<div class="s_name">是风动</div>
+										<div class="s_singer">河图、银临</div>
+									</li>
+									<li>
+										<div class="s_num">5</div>
+										<div class="s_name">牵丝戏</div>
+										<div class="s_singer">Aki阿杰、银临</div>
+									</li>
+									<li>
+										<div class="s_num">6</div>
+										<div class="s_name">悟空</div>
+										<div class="s_singer">贰婶</div>
+									</li>
+								</ul>
+							</div>
+							<div class="itemright">
+								<p class="liststitle">古风金曲榜</p>
+								<ul class="songlist">
+									<li>
+										<a href="#"><div class="s_num">1</div>
+										<div class="s_name">风筝误</div>
+										<div class="s_singer">刘珂矣</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">2</div>
+										<div class="s_name">红昭愿</div>
+										<div class="s_singer">音阙诗听</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">3</div>
+										<div class="s_name">不见有情</div>
+										<div class="s_singer">河图</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">4</div>
+										<div class="s_name">是风动</div>
+										<div class="s_singer">河图、银临</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">5</div>
+										<div class="s_name">牵丝戏</div>
+										<div class="s_singer">Aki阿杰、银临</div></a>
+									</li>
+									<li>
+										<a href="#"><div class="s_num">6</div>
+										<div class="s_name">悟空</div>
+										<div class="s_singer">贰婶</div></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="songerlist">
+			<div class="itemTitle">
+				<h3><b>热门</b>歌手</h3>
+				<a href="#">更多</a>
+			</div>
+			<div class="itemContent">
+				<ul>
+					<li>
+						<img src="img/index/2018090801.jpg"/>
+						<div class="info">
+							<p>周杰伦</p>
+							<p>代表作：告白气球</p>
+							<p>146.1万</p>
+						</div>
+						<div class="yoursong">
+							<h2>热门单曲</h2>
+							<a href="#">查看全部</a>
+							<ul>
+								<li>
+									<span>1</span>
+									<a href="audio.html" class="play" target="_blank">告白气球</a>
+								</li>
+								<li>
+									<span>2</span>
+									<a href="#" class="play">稻香</a>
+								</li>
+								<li>
+									<span>3</span>
+									<a href="#" class="play">青花瓷</a>
+								</li>
+								<li>
+									<span>4</span>
+									<a href="#" class="play">简单爱</a>
+								</li>
+								<li>
+									<span>5</span>
+									<a href="#" class="play">等你下课</a>
+								</li>
+								<li>
+									<span>6</span>
+									<a href="#" class="play">晴天</a>
+								</li>
+								<li>
+									<span>7</span>
+									<a href="#" class="play">七里香</a>
+								</li>
+								<li>
+									<span>8</span>
+									<a href="#" class="play">夜曲</a>
+								</li>
+							</ul>
+							<a href="#" class="playallsong">播放全部</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/index/2018090802.jpg"/>
+						<div class="info">
+							<p>王源</p>
+							<p>代表作：The Wrong Things</p>
+							<p>101.8万</p>
+						</div>
+						<div class="yoursong">
+							<h2>热门单曲</h2>
+							<a href="#">查看全部</a>
+							<ul>
+								<li>
+									<span>1</span>
+									<a href="#" class="play">The Wrong Things</a>
+								</li>
+								<li>
+									<span>2</span>
+									<a href="#" class="play">做我自己</a>
+								</li>
+								<li>
+									<span>3</span>
+									<a href="#" class="play">因为遇见你</a>
+								</li>
+								<li>
+									<span>4</span>
+									<a href="#" class="play">明天过后</a>
+								</li>
+								<li>
+									<span>5</span>
+									<a href="#" class="play">十七</a>
+								</li>
+								<li>
+									<span>6</span>
+									<a href="#" class="play">宝贝</a>
+								</li>
+								<li>
+									<span>7</span>
+									<a href="#" class="play">骄傲</a>
+								</li>
+								<li>
+									<span>8</span>
+									<a href="#" class="play">长大以后的世界</a>
+								</li>
+							</ul>
+							<a href="#" class="playallsong">播放全部</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/index/2018090803.jpg"/>
+						<div class="info">
+							<p>王俊凯</p>
+							<p>代表作：树读</p>
+							<p>128.7万</p>
+						</div>
+						<div class="yoursong">
+							<h2>热门单曲</h2>
+							<a href="#">查看全部</a>
+							<ul>
+								<li>
+									<span>1</span>
+									<a href="#" class="play">树读</a>
+								</li>
+								<li>
+									<span>2</span>
+									<a href="#" class="play">我在诛仙逍遥洞</a>
+								</li>
+								<li>
+									<span>3</span>
+									<a href="#" class="play">圆梦一代</a>
+								</li>
+								<li>
+									<span>4</span>
+									<a href="#" class="play">明日歌</a>
+								</li>
+								<li>
+									<span>5</span>
+									<a href="#" class="play">明天，你好</a>
+								</li>
+								<li>
+									<span>6</span>
+									<a href="#" class="play">摩天轮的思念</a>
+								</li>
+								<li>
+									<span>7</span>
+									<a href="#" class="play">宠爱</a>
+								</li>
+								<li>
+									<span>8</span>
+									<a href="#" class="play">焕蓝未来</a>
+								</li>
+							</ul>
+							<a href="#" class="playallsong">播放全部</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/index/2018090804.jpg"/>
+						<div class="info">
+							<p>易烊千玺</p>
+							<p>代表作：离骚</p>
+							<p>89.9万</p>
+						</div>
+						<div class="yoursong">
+							<h2>热门单曲</h2>
+							<a href="#">查看全部</a>
+							<ul>
+								<li>
+									<span>1</span>
+									<a href="#" class="play">丹青千里</a>
+								</li>
+								<li>
+									<span>2</span>
+									<a href="#" class="play">离骚</a>
+								</li>
+								<li>
+									<span>3</span>
+									<a href="#" class="play">Nothing To Lose</a>
+								</li>
+								<li>
+									<span>4</span>
+									<a href="#" class="play">Unpredictable</a>
+								</li>
+								<li>
+									<span>5</span>
+									<a href="#" class="play">你说</a>
+								</li>
+								<li>
+									<span>6</span>
+									<a href="#" class="play">宝贝</a>
+								</li>
+								<li>
+									<span>7</span>
+									<a href="#" class="play">对不起</a>
+								</li>
+								<li>
+									<span>8</span>
+									<a href="#" class="play">生生</a>
+								</li>
+							</ul>
+							<a href="#" class="playallsong">播放全部</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="partner">
+			<div class="itemTitle">
+				<h3><b>合作</b>伙伴</h3>
+			</div>
+			<div class="itemContent">
+				<a href="#"><img src="img/index/partner01.jpg"/></a>
+				<a href="#"><img src="img/index/partner02.jpg"/></a>
+				<a href="#"><img src="img/index/partner03.jpg"/></a>
+				<a href="#"><img src="img/index/partner04.jpg"/></a>
+				<a href="#"><img src="img/index/partner05.jpg"/></a>
+				<a href="#"><img src="img/index/partner06.jpg"/></a>
+				<a href="#"><img src="img/index/partner07.jpg"/></a>
+				<a href="#"><img src="img/index/partner08.jpg"/></a>
+				<a href="#"><img src="img/index/partner09.jpg"/></a>
+				<a href="#"><img src="img/index/partner10.jpg"/></a>
+				<a href="#"><img src="img/index/partner11.jpg"/></a>
+				<a href="#"><img src="img/index/partner12.jpg"/></a>
+				<a href="#"><img src="img/index/partner13.jpg"/></a>
+				<a href="#"><img src="img/index/partner14.jpg"/></a>
+				<a href="#"><img src="img/index/partner15.jpg"/></a>
+				<a href="#"><img src="img/index/partner16.jpg"/></a>
+				<a href="#"><img src="img/index/partner17.jpg"/></a>
+				<a href="#"><img src="img/index/partner18.jpg"/></a>
+				<a href="#"><img src="img/index/partner19.jpg"/></a>
+				<a href="#"><img src="img/index/partner20.jpg"/></a>
+				<a href="#"><img src="img/index/partner21.jpg"/></a>
+			</div>
+		</div>
+		<div class="friendlink">
+			<div class="itemTitle">
+				<h3><b>友情</b>链接</h3>
+				<a href="#">更多</a>
+			</div>
+			<div class="itemContent">
+				<a target="_blank" href="http://www.lady8844.com/" title="爱美网">爱美网</a>
+				<a target="_blank" href="http://ent.cntv.cn/" title="央视网综艺频道">央视网综艺频道</a>
+				<a target="_blank" href="http://baa.bitauto.com/" title="汽车论坛">汽车论坛</a>
+				<a target="_blank" href="http://www.ithome.com/" title="IT之家">IT之家</a>
+				<a target="_blank" href="http://www.25pp.com" title="iPhone游戏">iPhone游戏</a>
+				<a target="_blank" href="http://you.ctrip.com/" title="旅游攻略">旅游攻略</a>
+				<a target="_blank" href="http://www.yswxcn.com/" title="悦声无限">悦声无限</a>
+				<a target="_blank" href="http://www.vmall.com/" title="华为商城">华为商城</a>
+				<a target="_blank" href="http://www.yue365.com/" title="365音乐网">365音乐网</a>
+				<a target="_blank" href="http://www.xiazaiba.com" title="软件下载">软件下载</a>
+				<a target="_blank" href="http://www.manmankan.com/" title="漫漫看漫画">漫漫看漫画</a>
+				<a target="_blank" href="http://www.9game.cn" title="手机游戏">手机游戏</a>
+				<a target="_blank" href="http://5sing.kugou.com" title="5sing原创音乐">5sing原创音乐</a>
+				<a target="_blank" href="http://y.tencentmusic.com​" title="腾讯音乐人">腾讯音乐人</a>
+				<a target="_blank" href="http://www.wandoujia.com/" title="豌豆荚">豌豆荚</a>
+			</div>
+		</div>
+	</div>
+	<!-- 悬浮 回到顶部 -->
+	<div class="scrollTop">
+		<a href="#" class="scroll"></a>
+	</div>
+</div>
+<footer id="footer">
+</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/base.js"></script>
+	<script>
+	$(".newlist li").on("mouseover","[data-toggle=item]",function(e){
+		e.preventDefault();
+		var $item=$(this);
+		$item.addClass("active").parent().siblings().children().removeClass("active");
+		var id=$item.attr("data-target");
+		$(id).addClass("active").siblings().removeClass("active");
+	});
+	</script>	
+</body>
+</html>

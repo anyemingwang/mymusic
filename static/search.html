@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 酷狗音乐 - 就是歌多 </title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link href="img/icons/favicon.ico" rel="shortcut icon"> 
+</head>
+<body>
+    <header id="header"></header>
+    <div class="mainPage" id="search">
+            <div class="search_content">
+                <ul class="search_tab">
+                    <li data-type="song"><a id="song" href="#" class="active">单曲</a></li>
+                     <li data-type="special"><a id="special" href="#">歌单</a></li>
+                    <li data-type="mv"><a id="mv" href="#">MV</a></li>
+                </ul>
+               <div class="action_area" id="action_area">
+                        <p class="search_key">搜索<span class="col">"{{kw}}"</span>相关的歌曲</p>
+                        <a class="play_all" href="#"><span></span>播放
+                        </a>
+                </div>
+                <div class="song_list">
+                     <ul class="list_header">
+                        <li class="width_l">
+                            <span class="search_icon"></span>歌曲名
+                            </li>
+                            <li class="width_c" style="padding-left:10px;">
+                                    专辑
+                            </li>
+                            <li class="width_r">
+                                    时长
+                            </li>
+                        </ul>
+                        <div id="song_list">
+                            <!--<ul class="list_content">
+                            <li class="width_l">
+                                <span class="search_icon"></span>
+                                <a href="#" class="pc_songname lname">{{res.l_singer}} - {{res.lname}}</a></li>
+                            <li class="width_c">{{res.album}}</li>
+                            <li class="width_r ltime">
+                                    <span class="pc_songTime">{{res.ltime}}</span>
+                                     <span class="icon-play"></span>
+                                     <span class="pc_download"></span>
+                                     <span class="pc_share"></span>
+                            </li>
+                        </ul>-->
+                        </div>
+                     </div>
+                    <div class="download"> 查看更多内容，请下载客户端
+                            <span><a target="_blank" href="http://download.kugou.com/download/kugou_pc">立即下载</a></span>
+                    </div>
+            </div>
+    </div>    
+    <footer id="footer"></footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 酷狗音乐 - 就是歌多 </title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/rank.css"/>
+    <link href="img/icons/favicon.ico" rel="shortcut icon">
+</head>
+<body>
+    <header id="header"></header>
+<div class="mainPage">
+    <div class="pc_main">
+        <!--侧边栏-->
+        <div class="pc_side">
+            <div class="pc_hot">
+                <h3 data-trigger="dropdown"><a href="#">热门榜单
+                    <span class="pc_arrow"></span></a>
+                </h3>
+                <ul class="dropdown-menu">
+                    <li class="active" data-toggle="item" data-target="#riselist" id="riselist">
+                        <span></span>
+                        <a href="#riselist" >
+                            <h4>酷狗飙升榜</h4>
+                            <img src="img/lists/20189911.png"/></a>
+                    </li>
+                    <li  data-toggle="item" data-target="#top500" id="top500">
+                        <span></span>
+                        <a href="#top500" >
+                        <h4>酷狗TOP500</h4>
+                        <img src="img/lists/20189911.png"/>
+                    </a></li>
+                    <li>
+                        <span></span>
+                        <a href="#">
+                        <h4>网络红歌榜</h4>
+                        <img src="img/lists/20189912.png"/>
+                    </a></li>
+                    <li>
+                        <span></span>
+                        <a href="#">
+                        <h4>DJ热歌榜</h4>
+                    </a></li>
+                    <li>
+                        <span></span>
+                        <a href="#">
+                        <h4>华语新歌榜</h4>
+                    </a></li>
+                    <li>
+                        <span></span>
+                        <a href="#">
+                        <h4>繁星音乐榜</h4>
+                    </a></li>
+                    <li><span></span>
+                        <a href="#">
+                        <h4>古风金曲榜</h4>
+                        <img src="img/lists/20189912.png"/>
+                    </a></li>
+                    <li>
+                        <span></span>
+                        <a href="#">
+                        <h4>粤语金曲榜</h4>
+                        <img src="img/lists/20189912.png"/>
+                    </a></li>
+                    <li>
+                        <span></span>
+                        <a href="#">
+                        <h4>纯音乐榜</h4>
+                    </a></li>
+                    <li>
+                        <span></span>
+                        <a href="#">
+                        <h4>欧美新歌榜</h4>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <!--主体-->
+        <div class="pc_content">
+            <div class="box active" id="riselist" >
+                <div class="pc_ranktitle" id="pc_title">
+                    <!-- <div class="pc_temptitle">
+                    <h3>酷狗飙升榜</h3>
+                         <span class="rank_update">2018-09-08 更新</span>
+                         <a href="#"><span></span>播放全部</a>
+                    </div> -->
+                </div>
+            <div class="rankWrap" id="pc_btn">
+                 <div class="pc_songhead">
+                     <span class="pc_btn all"  data-checked=all></span>全选
+                </div>
+                <div class="pc_songlist">
+                     <ul id="hot">
+                         <!-- <li>
+                            <span class="pc_btn" data-check=checkbox></span>
+                             <span class="pc_num">1</span>
+                             <span class="pc_songTips"></span>
+                             <a href="#" class="pc_songname">许嵩 - 飞驰于你</a>
+                             <span class="pc_songTime">04:04</span>
+                            <span class="pc_share"></span>
+                            <span class="pc_download"></span>
+                             <span class="icon-play"></span>
+                         <!--</li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">2</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">程书林、鞠文娴 - BINBIAN病变</a>
+                                <span class="pc_songTime">04:07</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">3</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">刘郡格 - 作曲家</a>
+                                <span class="pc_songTime">03:19</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">4</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">宿涵 - 夜的第七章(Live)</a>
+                                <span class="pc_songTime">04:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                                
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">5</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">打包安琪 - 尼古拉斯狂想曲(Live)</a>
+                                <span class="pc_songTime">04:09</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">6</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">简弘亦 - 叶雪</a>
+                                <span class="pc_songTime">05:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">7</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">周兴哲、伍嘉成- 终于了解自由(Live)</a>
+                                <span class="pc_songTime">05:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">8</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">孙楠 - 我们(Live)</a>
+                                <span class="pc_songTime">04:35</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span> 
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">9</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">周兴哲、伍嘉成 - 永不失联的爱</a>
+                                <span class="pc_songTime">05:20</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">10</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">6诗人 - 错乱</a>
+                                <span class="pc_songTime">03:37</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">11</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">吴若希 - 为何你要背叛我【再创世纪电视剧插曲】</a>
+                                <span class="pc_songTime">04:38</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">12</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">周洁琼-WHY</a>
+                                <span class="pc_songTime">02:29</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">13</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">王蓉 - 半首歌(正式版)</a>
+                                <span class="pc_songTime">03:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">14</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">河图 - 寸缕 </a>
+                                <span class="pc_songTime">04:04</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li>
+                         <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">15</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">河图- 倾尽天下</a>
+                                <span class="pc_songTime">04:36</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                         </li> -->
+                     </ul>
+                  </div>
+            </div>
+                <div class="download"> 查看更多内容，请下载客户端
+                <span><a target="_blank" href="http://download.kugou.com/download/kugou_pc">立即下载</a></span>
+                 </div>
+            </div>
+           <!--  <div class="box" id="top500">
+                <div class="pc_ranktitle">
+                    <div class="pc_temptitle">
+                       <h3>酷狗TOP500</h3>
+                        <span class="rank_update">2018-09-10 更新</span>
+                        <a href="#"><span></span>播放全部</a>
+                    </div>-->
+                </div>
+                <div class="rankWrap">
+                    <div class="pc_songhead">
+                        <!--<span class="pc_btn" id="pc_btn" data-check=checkbox></span>全选
+                    </div>
+                    <div class="pc_songlist">
+                       <!-- <ul>
+                             <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">1</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">火箭少女101 - 卡路里</a>
+                                <span class="pc_songTime">04:04</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">2</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">庄心妍 - 再见只是陌生人</a>
+                                <span class="pc_songTime">04:07</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">3</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">黑龙 - 38度6</a>
+                                <span class="pc_songTime">03:19</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">4</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">于文文 - 体面</a>
+                                <span class="pc_songTime">04:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">5</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">蒙面哥、彭清 - 我已经爱上你</a>
+                                <span class="pc_songTime">04:09</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">6</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">蔡维泽 - 你终究不爱这世界(Live)</a>
+                                <span class="pc_songTime">05:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">7</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">张北北 - 拥抱你离去</a>
+                                <span class="pc_songTime">05:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">8</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">袁娅维 - 说散就散</a>
+                                <span class="pc_songTime">04:35</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">9</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">王北车 - 陷阱</a>
+                                <span class="pc_songTime">05:20</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">10</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">艾歌 - 一曲红尘</a>
+                                <span class="pc_songTime">03:37</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">11</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">阿里郎 - 隔壁泰山</a>
+                                <span class="pc_songTime">04:38</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">12</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">胡66 - 空空如也</a>
+                                <span class="pc_songTime">02:29</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">13</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">王大毛 - 去年夏天</a>
+                                <span class="pc_songTime">03:14</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">14</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">广东雨神 - 广东爱情故事 </a>
+                                <span class="pc_songTime">04:04</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                            <li>
+                                <span class="pc_btn"></span>
+                                <span class="pc_num">15</span>
+                                <span class="pc_songTips"></span>
+                                <a href="#" class="pc_songname">杨凯莉 - 让我做你的眼睛</a>
+                                <span class="pc_songTime">04:36</span>
+                                <span class="pc_share"></span>
+                                <span class="pc_download"></span>
+                                <span class="icon-play"></span>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="download"> 查看更多内容，请下载客户端
+                    <span><a target="_blank" href="http://download.kugou.com/download/kugou_pc">立即下载</a></span>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/rank.js"></script>
+    <script src="js/base.js"></script>
+    <script>
+        $(".dropdown-menu").show();
+        $("[data-trigger=dropdown]").click(function(e){
+            e.preventDefault();
+            var $menu=$(".dropdown-menu");
+            $menu.slideToggle(1000);
+            $(".pc_arrow").toggleClass ("pc_arrow2");
+        });
+        $("div.pc_hot>ul").on("click","[data-toggle=item]",function(e){
+            e.preventDefault();
+            var $item=$(this);
+            $item.addClass("active").siblings().removeClass("active");
+            var id=$item.attr("data-target");
+            $(id).addClass("active").siblings().removeClass("active");
+        });
+        $("#pc_btn").on("click","[data-checked=all]",function(e){
+            e.preventDefault();
+           var $check=$(this);
+            $check.toggleClass("checkbox");
+            var $checked=$("[data-check=checkbox]");
+            if($check.hasClass("checkbox")){
+                $checked.addClass("checkbox")
+            }else{
+                $checked.removeClass("checkbox")
+            }
+        });
+        $("#pc_btn").on("click","[data-check=checkbox]",function(e){
+            e.preventDefault();
+           var $checked=$(this);
+            $checked.toggleClass("checkbox");
+            var $check=$("[data-check=checkbox]");
+            console.log($check)
+            var s=false;
+            $check.each(function(i,elem){
+                //console.log(i)
+                
+                var $elem=$(elem);
+                if($elem.hasClass("checkbox")){
+                    console.log(111)
+                    s=true;                                      
+                }              
+                               
+            })
+            console.log(s);
+            var $all=$("[data-checked=all]");
+            //$all.addClass("checkbox")
+            //console.log($all)
+            if(s){
+                $all.addClass("checkbox")
+            }else{                
+                $all.removeClass("checkbox")
+            }             
+        });
+    </script>
+</body>
+</html>

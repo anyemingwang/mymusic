@@ -1,0 +1,13 @@
+.footerWrap{padding-bottom:40px;background-color:#2C323B;font-size:13px;clear: both;}
+.footer{border-bottom: 1px solid rgba(177,179,185,.3);}
+.links a,.copyright{color:#B1B3B9;text-align: center;}
+.copyright a{color:#999;}
+.links{width:1000px;margin:0 auto;padding-top:16px;padding-bottom: 16px;}
+.links a{border-right:1px solid #B1B3B9;padding:0 7px;}
+.links a:first-child{padding-left: 0;}
+.links a:last-child{padding-right: 0;border-right-color:transparent;}
+.links a:hover{color:#0C8ED9;}
+.copyright{padding-top:40px;line-height: 30px;}
+.copyright>:nth-child(2)>a{background: url("../img/icons/footer_icon.png") no-repeat 100% center;}
+.copyright>:nth-child(4)>a{background: url("../img/icons/icon_yuewangga1.png")no-repeat 100% center;}
+.copyright>:nth-child(6)>a{background: url("../img/icons/logo_down.png") no-repeat 100% center;}

@@ -1,0 +1,173 @@
+.header-wrapper{
+	width: 1000px;
+	margin:0 auto;
+}
+.public-header{
+	height: 40px;
+	line-height: 40px;
+	background: url("../img/register/header_bg.jpg")no-repeat;
+}
+.login,.shopping,.login ul>li{
+	float: right;
+	display: inline-block;
+}
+.shopping{
+	width: 30px;
+	height:35px;
+	background: url("../img/register/header_bg.png") no-repeat;
+	background-position: 0 -300px;
+	margin-left: 15px;
+}
+.login{
+	width:120px;
+	height:18px;
+	line-height: 18px;
+	margin-top:9px;
+	border-right: 1px solid #4CADE1;
+
+}
+.login ul li>a{
+	color:#8AA6D6;
+	height: 20px;
+	font-size: 14px;
+	padding-right: 15px;
+}
+.login ul li>a:hover{
+	color:#1594D6; 
+}
+.register_header{
+	width: 100%;
+	height: 60px;
+	background-color: #008AD4;
+}
+.reg_nav,.reg_content{
+	width: 1000px;
+	margin: 0 auto;
+	position:relative;
+	display: block;
+}
+.reg_nav h1{
+	display: inline-block;
+}
+.reg_left,.reg_nav li,.reg_nav h1{
+	float: left;
+	display: inline-block;
+}
+.reg_right{
+	float: right;
+	display: inline-block;
+}
+.reg_nav h1>a>img{
+	width: 170px;
+	height: 40px;
+	margin-top:10px ;
+}
+.reg_left{
+	margin-left: 15px;
+}
+.reg_left li,.reg_right li{
+	width:86px;
+	height:60px;
+	line-height: 60px;
+	text-align: center;
+}
+.reg_left li>a,.reg_right li>a{
+	color: #fff;
+}
+.reg_content{
+	height:600px;
+	margin:50px auto;
+	border:1px solid #54ADE7;
+	border-radius: 5px;
+	border-top:7px solid #54ADE7;
+	box-shadow: 0 2px 15px #666;
+}
+.reg_hd{
+	height:84px;
+	line-height: 84px;
+	text-align: center;
+}
+.reg_hd h1{
+	font-size:24px;
+	font-weight: normal;
+	color:#006DC1;
+	margin-top: 20px;
+}
+.reg_input{
+	width:800px;
+	height:450px;
+	margin:40px auto;
+	text-align:center;
+}
+.reg_input form table{
+	width:800px;
+	margin: 0 auto;
+}
+.reg_input form table tr{
+	height: 53px;
+	line-height: 53px;
+}
+.reg_input form table tr td:first-child{
+	text-align: right;
+	width:300px;
+	color: #474747;
+}
+.reg_input form table tr td:last-child{
+	text-align: left;
+	width:500px;
+}
+.reg_input form table tr td:last-child input{
+	padding: 8px 0 8px 5px;
+}
+#uname,#upwd,#cpwd{
+	width: 260px;
+	/*background:#F3F3F3;*/
+	outline: none;
+}
+#uname:focus,#upwd:focus,#cpwd:focus{
+	background: #fff;
+}
+.msg_default{
+	color:#7B7B7B;
+}
+.hidden{
+	display: none;
+}
+.reg_input form table tr:nth-child(4) td:last-child span{
+	margin-right:15px;
+}
+.reg_input form table tr:nth-child(4) td:last-child input{
+	margin-right: 5px;
+}
+.reg_input form table tr:nth-child(5) td:last-child input{
+	display: inline-block;
+	float: left;
+	margin: 22px 3px 0 0;
+}
+.reg_input form table tr:nth-child(5) td:last-child span:first-child{
+	color:#949394;
+	font-size:14px;
+	margin-right:15px;
+}
+.reg_input form table tr:nth-child(5) td:last-child a{
+	font-size: 14px;
+	color:#54B6ED;
+	text-decoration:underline;
+}
+.reg_input form table tr:last-child td:last-child input{
+	outline: none;
+	font-size:17px;
+	/* background: #3DB9EC; */
+	/* background: gray; */
+	 border:0;
+	 color:#fff;
+	 height:45px;
+	 width:100px;
+	 cursor: pointer;
+	 border-radius:5px;
+}
+.high{ color: red; }
+.msg{ font-size: 13px; }
+.onError{ color: red; }
+.onSuccess{ color: green; }
+.onprompt{color:gray;}

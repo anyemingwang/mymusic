@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> 用户注册 - 酷狗音乐 </title>
+	<link rel="stylesheet" href="css/register.css">
+	<link rel="stylesheet" href="css/base.css"/>
+	<link href="img/icons/favicon.ico" rel="shortcut icon">
+</head>
+<body>
+<div class="mainPage">
+		<div class="header-wrapper">
+			<div class="public-header">
+				<div class="shopping">
+    				<a href="#"></a>
+    			</div>
+    			<div class="login">
+    				<ul class="nav">
+    					<li><a href="#">注册</a></li>
+    					<li><a href="#">登录</a></li>
+					</ul>
+    			</div>
+			</div>
+		</div>
+		<div class="register_header">
+			<div class="reg_nav">
+				<h1><a href="index.html"><img src="img/icons/herder_logo.jpg"/></a></h1>
+				<ul class="reg_left">
+					<li><a href="index.html" target="_blank">酷狗商城</a></li>
+					<li><a href="rank.html" target="_blank">下载客户端</a></li>
+					<li><a href="#">音乐直播</a></li>
+					<li class="more"><a href="#">酷狗音乐人</a></li>
+				</ul>
+				<ul class="reg_right">
+					<li><a href="#">产品中心</a></li>
+					<li><a href="#">VIP中心</a></li>
+					<li><a href="#">客服中心</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="reg_content">
+			<div class="reg_hd">
+				<h1>账号注册</h1>
+			</div>
+			<div class="reg_input">
+				<form id="form-register">
+					<table>
+						<tr>
+							<td> 用户名：</td>
+							<td>
+								<span><input required type="text" id="uname" class="required" autocomplete minlength="3" maxlength="12" placeholder="请输入用户名"/></span>
+							</td>
+						</tr>
+						<tr>
+							<td> 用户密码：</td>
+							<td>
+								<span><input  required 
+									class="required" type="password" id="upwd"  minlength="6" maxlength="12" placeholder="请输入用户密码"/></span>
+							</td>
+						</tr>
+						<tr>
+							<td> 确认密码：</td>
+							<td>
+								<span><input required type="password" id="cpwd" class="required"  placeholder="请输入确认密码"/></span>
+							</td>
+						</tr>
+						<tr>
+							<td>性别：</td>
+							<td>
+								<span><input type="radio" name="sex" id="sex1" value="1"/><label for="sex1">男</label></span>
+								<span><input type="radio" name="sex" id="sex2" value="0"/><label for="sex2">女</label></span>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="checkbox" required id="again" onchange="this.checked ? enable() : disable()"/><span>我已经认真阅读并同意</span>&nbsp;<a href="#">用户协议</a>、<a href="#">隐私协议</a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="button" value="注册" id="register" disabled/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/base.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
